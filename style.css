@@ -1,0 +1,14 @@
+h1 {
+    color: cadetblue;
+    background-color: whitesmoke;
+    border: 5px darkcyan solid;
+    margin-bottom: 100px;
+    padding: 20px 100px 20px 100px;
+    text-align: center;
+}
+.title {
+    background-color: azure;
+}
+#important {
+    color:seagreen
+}
