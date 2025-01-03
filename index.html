@@ -3,21 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <title>Restaurant Finder</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1 class="title">Welcome to my blog</h1>
-    <h2 class="title" id="important">Today is a rainy day</h2>
-    <button onclick="sayHello()">This is a button</button>
-    <br><a href="https://techup.live" class=”>Check out past apps</a>
+    <div class="container">
+        <header>
+            <h1>Restaurant Finder</h1>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search for restaurants...">
+                <button id="searchButton">Search</button>
+            </div>
+        </header>
+        
+        <div class="filters">
+            <select id="cuisineFilter">
+                <option value="">All Cuisines</option>
+                <option value="italian">Italian</option>
+                <option value="japanese">Japanese</option>
+                <option value="mexican">Mexican</option>
+                <option value="indian">Indian</option>
+            </select>
+            <select id="ratingFilter">
+                <option value="">All Ratings</option>
+                <option value="4">4+ Stars</option>
+                <option value="3">3+ Stars</option>
+                <option value="2">2+ Stars</option>
+            </select>
+        </div>
 
-    <hr>
-
-    <input type="text" name="Age" id="user-input">
-    <button onclick="showAge()">Submit</button>
-       
-   <h3>Thanks for confirming that your age is: <span id="header-age"></span></h3>
+        <div id="results" class="results-grid">
+            <!-- Results will be populated by JavaScript -->
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
